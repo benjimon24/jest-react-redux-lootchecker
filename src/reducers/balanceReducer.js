@@ -1,16 +1,27 @@
 import { SET_BALANCE, DEPOSIT, WITHDRAW } from "../actions/constants";
+import { read_cookie, bake_cookie } from "sfcookies";
 
+const BALANCE_COOKIE = "BALANCE_COOKIE";
 const INITIAL_STATE = 0;
 
 export default (state = INITIAL_STATE, action) => {
+  let balance;
+
   switch (action.type) {
     case SET_BALANCE:
-      return action.payload;
+      balance = action.payload;
+      break;
     case DEPOSIT:
-      return state + action.payload;
+      balance = state + action.payload;
+      break;
     case WITHDRAW:
-      return state - action.payload;
+      balance = state - action.payload;
+      break;
     default:
-      return state;
+      balance = parseInt(read_cookie(BALANCE_COOKIE)) || state;
   }
+
+  bake_cookie(BALANCE_COOKIE, balance);
+
+  return balance;
 };
