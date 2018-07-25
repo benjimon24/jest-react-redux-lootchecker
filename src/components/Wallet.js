@@ -8,7 +8,7 @@ export class Wallet extends Component {
   };
 
   updateBalance = event => {
-    this.setState({ balance: parseInt(event.target.value) });
+    this.setState({ balance: parseInt(event.target.value, 10) });
   };
 
   clickDepositButton = () => {

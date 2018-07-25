@@ -18,7 +18,7 @@ export default (state = INITIAL_STATE, action) => {
       balance = state - action.payload;
       break;
     default:
-      balance = parseInt(read_cookie(BALANCE_COOKIE)) || state;
+      balance = parseInt(read_cookie(BALANCE_COOKIE), 10) || state;
   }
 
   bake_cookie(BALANCE_COOKIE, balance);
