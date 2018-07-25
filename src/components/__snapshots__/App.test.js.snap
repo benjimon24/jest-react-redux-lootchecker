@@ -17,7 +17,13 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <div />,
+      "children": <div>
+        <h2>
+                LootCheck
+        </h2>
+        <hr />
+        <Connect(Wallet) />
+</div>,
       "store": Object {
         "dispatch": [Function],
         "getState": [Function],
@@ -31,9 +37,47 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
-      "props": Object {},
+      "props": Object {
+        "children": Array [
+          <h2>
+            LootCheck
+</h2>,
+          <hr />,
+          <Connect(Wallet) />,
+        ],
+      },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "LootCheck",
+          },
+          "ref": null,
+          "rendered": "LootCheck",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
     "type": [Function],
@@ -44,7 +88,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <div />,
+        "children": <div>
+          <h2>
+                    LootCheck
+          </h2>
+          <hr />
+          <Connect(Wallet) />
+</div>,
         "store": Object {
           "dispatch": [Function],
           "getState": [Function],
@@ -58,9 +108,47 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
-        "props": Object {},
+        "props": Object {
+          "children": Array [
+            <h2>
+              LootCheck
+</h2>,
+            <hr />,
+            <Connect(Wallet) />,
+          ],
+        },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LootCheck",
+            },
+            "ref": null,
+            "rendered": "LootCheck",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
       "type": [Function],
