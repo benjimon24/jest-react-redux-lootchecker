@@ -1,8 +1,22 @@
-import { SET_BALANCE } from "./constants";
+import { SET_BALANCE, DEPOSIT, WITHDRAW } from "./constants";
 
-export const setBalance = balance => {
+export const setBalance = payload => {
   return {
     type: SET_BALANCE,
-    payload: balance
+    payload
+  };
+};
+
+export const deposit = payload => {
+  return {
+    type: DEPOSIT,
+    payload
+  };
+};
+
+export const withdraw = payload => {
+  return {
+    type: WITHDRAW,
+    payload
   };
 };
