@@ -1,12 +1,16 @@
 import React, { Component } from "react";
+import { createStore } from "redux";
+import rootReducer from "../reducers";
+import { Provider } from "react-redux";
+
+const store = createStore(rootReducer);
 
 class App extends Component {
-  state = {};
   render() {
     return (
-      <div>
-        <h2>Lootcheck</h2>
-      </div>
+      <Provider store={store}>
+        <div />
+      </Provider>
     );
   }
 }

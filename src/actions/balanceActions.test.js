@@ -1,7 +1,7 @@
 import { SET_BALANCE } from "./constants";
-import { setBalance } from "./balance";
+import { setBalance } from "./balanceActions";
 
-describe("balance", () => {
+describe("Balance Actions", () => {
   it("creates an action to set the balance", () => {
     const balance = 0;
     const expectedAction = { type: SET_BALANCE, payload: balance };
