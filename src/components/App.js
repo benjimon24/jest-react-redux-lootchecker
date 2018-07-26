@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import rootReducer from "../reducers";
+import reduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
 import Wallet from "./Wallet";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(reduxThunk));
 
 class App extends Component {
   render() {
