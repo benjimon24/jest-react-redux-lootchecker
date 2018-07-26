@@ -6,11 +6,11 @@ An application built on React, utilizing Redux to handle state management. Built
 2. ```npm start``` to see the application
 3. ```npm run test -- --coverage ``` to see tests and coverage report
 
-## Link
-* [React - Mastering Test Driven Development](https://www.udemy.com/react-tdd/)
-
 ## Technologies
-1. Reac
+1. React
 2. Jest
 3. Enzyme
 4. Redux, React-Redux
+
+## Link
+* [React - Mastering Test Driven Development](https://www.udemy.com/react-tdd/)
