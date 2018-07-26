@@ -4,8 +4,7 @@ An application built on React, utilizing Redux to handle state management. Built
 ## Usage
 1. ```npm install```
 2. ```npm start``` to see the application
-3. 
-```npm run test -- --coverage ``` to see tests and coverage report
+3. ```npm run test -- --coverage ``` to see tests and coverage report
 
 ## Link
 * [React - Mastering Test Driven Development](https://www.udemy.com/react-tdd/)
