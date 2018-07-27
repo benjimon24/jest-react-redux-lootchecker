@@ -1,5 +1,7 @@
 # LootChecker
-An application built on React, utilizing Redux to handle state management. Built with a behaviorally-driven-development (BDD) approach, using Jest and Enzyme. Part of the "React - Mastering Test Driven Development" course by David Katz (link below).
+This application allows users to set a balance, withdraw and deposit values from this balance, and see its equivalent value in bitcoin.
+
+This application is built on React, utilizing Redux to handle state management, and using fetch to make calls to the CoinDesk API for real-time price of bitcoins. Built with a behaviorally-driven-development (BDD) approach, using Jest and Enzyme. Part of the "React - Mastering Test Driven Development" course by David Katz (link below).
 
 ## Usage
 1. ```npm install```
@@ -11,6 +13,7 @@ An application built on React, utilizing Redux to handle state management. Built
 2. Jest
 3. Enzyme
 4. Redux, React-Redux
+5. CoinDesk API
 
 ## Link
 * [React - Mastering Test Driven Development](https://www.udemy.com/react-tdd/)
